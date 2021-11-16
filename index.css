@@ -1,67 +1,92 @@
-
 body {
     background-color: hsl(225, 100%, 94%);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin-top: 0%;
+    font-family: 'Red Hat Display', sans-serif;
 }
-
 
 section{
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .content {
-    /*border: 1px solid grey;*/
-    max-width: 325px;
+    max-width: 400px;
     margin: auto;
-    height: 55vh;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
     background-color:whitesmoke;
-    /*border-radius: 5%;*/
-    
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    box-shadow: 0px 20px 30px -8px hsl(245, 33%, 84%);
 }
 
 .img_hero img {
-    width: 325px;
+    width: 400px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
 }
 
+/* Order Summary Container */
 
 .order_summary {
     text-align: center;
     font-size: 20px;
-    /*font-family: ; */
+    margin-top: 10%;
+
 }
 
 .order_summary p {
     font-size: 16px;
+    color: grey;
     text-align: center;
-    margin: 10px;
-    /*font-family: ; */
+    margin: 10px 50px 10px 50px;
+    width: 300px;
 }
+
+/* Anunnal Plan Container */
 
 .annual_plan {
     display: flex;
     align-items: center;
     background-color: hsl(227, 39%, 95%);
-    margin: 8%;
-    border-radius: 5%;
+    margin: 5% 10% 5% 10%;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
 }
 
 .annual_plan .img_icon_music {
     margin: 5%
-    
 }
+
+.annual_plan .annual_plan_name {
+    margin: 0 0 4% 0;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(75, 75, 75)
+}
+
+.annual_plan .annual_plan_price {
+    margin: 0;
+    color: grey;
+    font-size: 15px;
+}
+
 
 .annual_plan .annual_plan_change {
-    margin-right: 5%;
+    margin-right: 0%;
+    margin-left: 25%;
+    font-weight: 500;
+    font-size: 15px;
 }
 
-
+/* Payment Button */
 
 .payment{
     margin: 8%;
@@ -73,11 +98,11 @@ section{
 }
 
 .payment .button_payment {
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
-    width: 310px;
+    width: 320px;
     padding: 4%;
-    box-shadow: 0px 10px 14px -7px grey;
+    box-shadow: 0px 20px 30px -8px hsl(245, 96%, 79%);
     background-color: hsl(245, 75%, 52%);
     color: white;
     border: none;
@@ -85,8 +110,21 @@ section{
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
+    font-weight: 700;
 }
+
+/* Cancel Order */
+
 .cancel_order {
     text-decoration: none;
     color: grey;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+footer {
+    max-width: 400px;
+    margin: auto;
 }

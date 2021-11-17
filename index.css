@@ -51,7 +51,7 @@ section {
     display: flex;
     align-items: center;
     background-color: hsl(227, 39%, 95%);
-    margin: 5% 10% 5% 10%;
+    margin: 5% 10% 10% 10%;
     border-radius: 8px 8px 8px 8px;
 }
 
@@ -59,24 +59,29 @@ section {
     margin: 5%;
 }
 
-.annual_plan .annual_plan_name {
-    margin: 0 0 4% 0;
+.annual_plan .annual_plan_np {
+    margin: 0 10% 0 0;
+}
+
+.annual_plan .annual_plan_np .annual_plan_name {
+    margin-bottom: 4%;
+    width: 100px;
+    text-align: left;
     font-weight: 700;
     font-size: 15px;
     color: rgb(75, 75, 75)
 }
 
-.annual_plan .annual_plan_price {
-    margin: 0;
+.annual_plan .annual_plan_np .annual_plan_price {
+    margin: 0 0 15% 0;
     color: grey;
     font-size: 15px;
 }
 
 
 .annual_plan .annual_plan_change {
-    margin-right: 5%;
-    margin-left: 25%;
-    font-weight: 500;
+    margin: 0 7% 0 10%;
+    font-weight: 700;
     font-size: 15px;
 }
 
@@ -98,6 +103,7 @@ a.annual_plan_change:hover {
 .payment .button_payment {
     font-size: 13px;
     font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
     width: 320px;
     padding: 4%;

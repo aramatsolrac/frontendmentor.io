@@ -59,6 +59,7 @@ I have learned how to organize better HTML and CSS code, which is a skill I want
 .payment .button_payment {
     font-size: 13px;
     font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
     width: 320px;
     padding: 4%;

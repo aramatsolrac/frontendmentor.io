@@ -2,23 +2,26 @@
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- displays site properly based on user's device -->
 
 <head>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" /> <!-- css reset -->
     <link href="index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Work+Sans:ital,wght@0,500;0,800;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <title>Frontend Mentor | Order summary card</title>
 </head>
 
 <body>
-    <section>
+    <main>
         <div class="container">
             <div class="img_hero">
-                <img src="images/illustration-hero.svg" alt="illustration of someone listenng music">
+                <img src="images/illustration-hero.svg" alt="illustration of someone listening music">
             </div>
             <div class="order_summary">
                 <h3>Order Summary</h3>
@@ -27,7 +30,7 @@
             </div>
             <div class="annual_plan">
                 <span class="img_icon_music">
-                    <img src="./images/icon-music.svg" alt="icon music">
+                    <img src="./images/icon-music.svg" alt="" aria-hidden="true">
                 </span>
                 <div class="annual_plan_np">
                     <p class="annual_plan_name">Annual Plan</p>
@@ -42,7 +45,7 @@
                 <a href="#" class="cancel_order">Cancel Order</a>
             </div>
         </div>
-    </section>
+    </main>
 </body>
 <footer>
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by

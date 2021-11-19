@@ -2,28 +2,29 @@ body {
     background-color: hsl(225, 100%, 94%);
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     margin-top: 0;
     font-family: 'Red Hat Display', sans-serif;
 }
 
 main {
-    height: min-height;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container {
-    width: max-width;
-    margin: 10%;
+    max-width: 100%;
+    margin: 10% 35% 10% 35%;
     background-color:whitesmoke;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 20px 30px -8px hsl(245, 33%, 84%);
 }
 
 .img_hero img {
-    width: max-width;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
 }
@@ -42,7 +43,7 @@ main {
     color: grey;
     text-align: center;
     margin: 10px 50px 10px 50px;
-    width: 350px;
+    max-width: 100%;
 }
 
 /* Anunnal Plan Container */
@@ -60,7 +61,7 @@ main {
 }
 
 .annual_plan .annual_plan_np {
-    margin: 0 10% 0 0;
+    margin: 5% 10% 0 0;
 }
 
 .annual_plan .annual_plan_np .annual_plan_name {
@@ -136,8 +137,10 @@ a.cancel_order:hover {
 }
 
 footer {
-    max-width: max-width;
+    max-width: 100%;
     margin: 1%;
     font-size: 0.8rem;
     text-align: center;
 }
+
+

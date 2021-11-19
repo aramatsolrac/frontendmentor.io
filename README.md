@@ -37,31 +37,31 @@ Users should be able to:
 
 ### What I learned
 
-I have learned how to organize better HTML and CSS code, which is a skill I want to improve. Besides that, I have learned how to make border-radius, hover, and box-shadow related to CSS. I have also been learning more about the box model, which I struggled to apply in this challenge.
+I have learned how to organize better HTML and CSS code, which is a skill I want to improve. Besides that, I have learned how to make border-radius, hover, and box-shadow related to CSS. I have also been learning more about the box model, which I struggled to apply in this challenge. In addition, after I get some feedback from Frontend Mentor I have learned about  'aria-hidden and 'role presentation', modern CSS reset, and px vs rem.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
-<div class="annual_plan">
+  <div class="annual_plan">
     <span class="img_icon_music">
-        <img src="./images/icon-music.svg" alt="icon music">
+      <img src="./images/icon-music.svg" alt="" aria-hidden="true">
     </span>
-    <div>
-        <p class="annual_plan_name">Annual Plan</p>
-        <p class="annual_plan_price">$59.99/year</p>
+    <div class="annual_plan_np">
+      <p class="annual_plan_name">Annual Plan</p>
+      <p class="annual_plan_price">$59.99/year</p>
     </div>
-    <a href="#" class="annual_plan_change">Change</a>
-</div>
+      <a href="#" class="annual_plan_change">Change</a>
+  </div>
 
 ```
 ```css
 .proud-of-this-css {}
 
 .payment .button_payment {
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 700;
     font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
-    width: 320px;
+    width: 360px;
     padding: 4%;
     box-shadow: 0px 20px 30px -8px hsl(245, 96%, 79%);
     background-color: hsl(245, 75%, 52%);

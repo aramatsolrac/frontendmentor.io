@@ -3,27 +3,27 @@ body {
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: 0%;
+    margin-top: 0;
     font-family: 'Red Hat Display', sans-serif;
 }
 
-section {
-    height: 90vh;
+main {
+    height: min-height;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container {
-    max-width: 400px;
-    margin: auto;
+    width: max-width;
+    margin: 10%;
     background-color:whitesmoke;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 20px 30px -8px hsl(245, 33%, 84%);
 }
 
 .img_hero img {
-    width: 400px;
+    width: max-width;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
 }
@@ -32,17 +32,17 @@ section {
 
 .order_summary h3 {
     text-align: center;
-    font-size: 23px;
+    font-size: 1.4rem;
     margin-top: 10%;
     margin-bottom: 4%;
 }
 
 .order_summary p {
-    font-size: 16px;
+    font-size: 1rem;
     color: grey;
     text-align: center;
     margin: 10px 50px 10px 50px;
-    width: 300px;
+    width: 350px;
 }
 
 /* Anunnal Plan Container */
@@ -68,21 +68,21 @@ section {
     width: 100px;
     text-align: left;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.9rem;
     color: rgb(75, 75, 75)
 }
 
 .annual_plan .annual_plan_np .annual_plan_price {
     margin: 0 0 15% 0;
     color: grey;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 
 .annual_plan .annual_plan_change {
     margin: 0 7% 0 10%;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 a.annual_plan_change:hover {
@@ -93,7 +93,7 @@ a.annual_plan_change:hover {
 /* Payment Button */
 
 .payment {
-    margin: 8%;
+    margin: 10%;
     position: relative;
     display: flex;
     align-items: center;
@@ -101,11 +101,11 @@ a.annual_plan_change:hover {
 }
 
 .payment .button_payment {
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 700;
     font-family: 'Red Hat Display', sans-serif;
     text-decoration: none;
-    width: 320px;
+    width: 360px;
     padding: 4%;
     box-shadow: 0px 20px 30px -8px hsl(245, 96%, 79%);
     background-color: hsl(245, 75%, 52%);
@@ -125,7 +125,7 @@ a.annual_plan_change:hover {
 .cancel_order {
     text-decoration: none;
     color: grey;
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 700;
     margin-bottom: 5%;
     margin-top: 0;
@@ -136,8 +136,8 @@ a.cancel_order:hover {
 }
 
 footer {
-    max-width: 400px;
-    margin: auto;
-    font-size: 13px;
+    max-width: max-width;
+    margin: 1%;
+    font-size: 0.8rem;
     text-align: center;
 }

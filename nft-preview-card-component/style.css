@@ -1,5 +1,6 @@
 body {
     font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
 }
 
 main, footer {
@@ -11,10 +12,10 @@ main, footer {
 
 .container {
     margin: 10% 30%;
-    border: solid red;
     max-width: 21.875rem;
     max-height: 37.25rem;
     border-radius: 1rem;
+    background-color: hsl(216, 50%, 16%);
 }
 
 .content {
@@ -26,11 +27,29 @@ main, footer {
     max-width: 18.87rem;
     max-height: 18.87rem;
     border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.d-h1 h1 {
+a.image-equilibrium--link:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.d-equilibrium a {
     font-size: 1.5rem;
     margin: 1.5rem 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.d-equilibrium--link:hover, a.avatar-creator:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.d-equilibrium p {
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+    margin-top: 1rem;
 }
 
 .div-details {
@@ -41,10 +60,45 @@ main, footer {
     margin: 1.563rem 0;
 }
 
+.div-details .div-details--eth {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.div-details--eth img {
+    width: 0.75rem;
+    height: 1.25rem;
+}
+
+.div-details--eth-number {
+    color: hsl(178, 100%, 50%);
+    padding-left: 5%;
+}
+
+.div-details .div-details--time {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.div-details .div-details--time img {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin: 2% 4% 0 0;
+}
+
+.div-details--time-days {
+    color:  hsl(215, 51%, 70%);
+    font-weight: lighter;
+    width: 4.563rem;
+    height: 1.25rem;
+}
+
 .avatar {
     display: flex;
     justify-content: space-between;
-    max-width: 14.375rem;
+    width: 100%;
     max-height: 2.063rem;
     margin: 0.75rem 5.75rem 2rem 0;
 }
@@ -52,20 +106,38 @@ main, footer {
 .avatar img {
     width: 2.063rem;
     height: 2.063rem;
+    border-radius: 25rem;
+    border: 0.063rem solid white;
 }
 
 .avatar span {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-weight: 18.75rem;
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+    width: 100%;
+    padding: 1%;
+    margin: 0 0 2% 4%;
+}
+
+.avatar a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
 }
 
 hr {
     max-width: 18.875rem;
+    border-color: hsl(215, 32%, 27%);
 }
 
-p {
-    font-size: 1rem;
-}
 
 footer {
     margin: 1%;
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+}
+
+footer a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
 }

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+main, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    margin: 10% 30%;
+    border: solid red;
+    max-width: 21.875rem;
+    max-height: 37.25rem;
+    border-radius: 1rem;
+}
+
+.content {
+    margin: 1.5rem;
+}
+
+
+.image-equilibrium img {
+    max-width: 18.87rem;
+    max-height: 18.87rem;
+    border-radius: 0.5rem;
+}
+
+.d-h1 h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.div-details {
+    display: flex;
+    justify-content: space-between;
+    max-height: 1.25rem;
+    max-width: 18.813rem;
+    margin: 1.563rem 0;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 14.375rem;
+    max-height: 2.063rem;
+    margin: 0.75rem 5.75rem 2rem 0;
+}
+
+.avatar img {
+    width: 2.063rem;
+    height: 2.063rem;
+}
+
+.avatar span {
+    font-size: 1.125rem;
+}
+
+hr {
+    max-width: 18.875rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+footer {
+    margin: 1%;
+}

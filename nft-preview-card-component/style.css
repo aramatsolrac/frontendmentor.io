@@ -22,6 +22,13 @@ main, footer {
     margin: 1.5rem;
 }
 
+/* Image Equilibrium */
+
+.image-equilibrium {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
 
 .image-equilibrium img {
     max-width: 18.87rem;
@@ -30,9 +37,39 @@ main, footer {
     margin-bottom: 1.5rem;
 }
 
-a.image-equilibrium--link:hover {
-    color: hsl(178, 100%, 50%);
-}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    border-radius: 0.5rem;
+    background-color: hsl(178, 100%, 50%);
+  }
+
+  .image-equilibrium:hover .overlay {
+    opacity: 0.6;
+  }
+
+  .icon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.bi bi-eye-fill:hover {
+    color: white;
+  }
+
+/* Equilibrium Text */
 
 .d-equilibrium a {
     font-size: 1.5rem;
@@ -51,6 +88,8 @@ a.d-equilibrium--link:hover, a.avatar-creator:hover {
     font-weight: lighter;
     margin-top: 1rem;
 }
+
+/* Details */
 
 .div-details {
     display: flex;
@@ -95,6 +134,8 @@ a.d-equilibrium--link:hover, a.avatar-creator:hover {
     height: 1.25rem;
 }
 
+/* Creator */
+
 .avatar {
     display: flex;
     justify-content: space-between;
@@ -130,7 +171,6 @@ hr {
     border-color: hsl(215, 32%, 27%);
 }
 
-
 footer {
     margin: 1%;
     color: hsl(215, 51%, 70%);
@@ -140,4 +180,11 @@ footer {
 footer a {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 375px) {
+.container {
+   
+}
 }

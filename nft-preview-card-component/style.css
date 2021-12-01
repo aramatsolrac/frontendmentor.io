@@ -1,6 +1,11 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 main, footer {
@@ -11,7 +16,6 @@ main, footer {
 
 
 .container {
-    margin: 15% 35%;
     max-width: 22rem;
     max-height: 37.25rem;
     border-radius: 1rem;
@@ -48,21 +52,24 @@ main, footer {
     opacity: 0;
     transition: 0.1s;
     border-radius: 0.5rem;
-    background-color: hsl(178, 100%, 50%);
+    background: hsla(178, 100%, 50%, 0.6);
   }
 
-  .image-equilibrium:hover .overlay {
-    opacity: 0.6;
+.image-equilibrium:hover .overlay {
+    opacity: 1;
   }
 
-  .icon {
+.image-equilibrium:focus-within .overlay {
+    opacity: .6;
+}
+
+.icon {
     color: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
+    display: grid;
+    inset: 0 0 0 0;
+    place-content: center;
   }
 
 .bi bi-eye-fill:hover {
@@ -153,7 +160,7 @@ a.d-equilibrium--link:hover, a.avatar-creator:hover {
     border: 0.063rem solid white;
 }
 
-.avatar span {
+.avatar p {
     font-size: 1rem;
     font-weight: 18.75rem;
     color: hsl(215, 51%, 70%);
@@ -174,7 +181,7 @@ hr {
 }
 
 footer {
-    margin: 1%;
+    margin: 5% 0 0 0;
     color: hsl(215, 51%, 70%);
     font-weight: lighter;
 }
@@ -187,11 +194,6 @@ footer a {
 @media only screen and (max-width: 375px) {
     .d-equilibrium p {
         max-width: 90%;
-    }
-
-    .image-equilibrium img {
-        max-width: 17.5rem;
-        max-height: 17.5rem;
     }
 
     footer {

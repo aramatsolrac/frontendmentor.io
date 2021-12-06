@@ -54,6 +54,12 @@ body {
     margin: 2rem 0;
 }
 
+.car-button:hover, .car-button:focus {
+    border: 0.05rem solid white;
+    background-color: transparent;
+    color: white
+}
+
 .car-type--sedan, .car-type--suv, .car-type--luxury {
     width: 32%;
     padding: 3%;
@@ -80,7 +86,7 @@ footer {
     width: 100%;
     text-align: center;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 @media only screen and (max-width: 375px){
@@ -92,9 +98,5 @@ footer {
         width: 75%;
         margin: 0 5% 0 12%;
         padding-left: 10%;
-    }
-
-    footer {
-        font-size: ;
     }
 }
